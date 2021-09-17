@@ -96,7 +96,7 @@ namespace Baratao
         private void btnProdutos_Click(object sender, EventArgs e)
         {
             ActiveBtn(sender, Colors.color1);
-            OpenChildForm(new FormProduto());
+            OpenChildForm(new FormProdutos());
         }
 
         private void btnVendedores_Click(object sender, EventArgs e)
@@ -142,16 +142,7 @@ namespace Baratao
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void FormMainMenu_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+     
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -170,5 +161,7 @@ namespace Baratao
         {
             WindowState = FormWindowState.Minimized;
         }
+
+       
     }
 }
